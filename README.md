@@ -1,3 +1,13 @@
+## Links
+https://docs.guzzlephp.org/en/stable/overview.html
+https://symfony.com/doc/current/http_client.html#concurrent-requests
+
+## Github repository
+https://github.com/inforob/promises-guzzle-php
+
+## Dummy Json
+https://dummyjson.com/docs
+
 # Uso de Guzzle y HttpClient en Symfony para Peticiones Asíncronas
 
 Este documento explica cómo utilizar Guzzle y el componente HttpClient de Symfony para realizar peticiones HTTP de forma asíncrona utilizando promesas.
