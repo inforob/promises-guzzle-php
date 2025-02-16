@@ -20,15 +20,13 @@ final class GroovyController extends AbstractController
 
         // Llamadas síncronas a APIs externas
         $response1 = $client->get('https://dummyjson.com/posts/?delay=1000');
-
         $response2 = $client->get('https://dummyjson.com/posts/?delay=1000');
-
         $response3 = $client->get('https://dummyjson.com/posts/?delay=1000');
-
-        $response3 = $client->get('https://dummyjson.com/posts/?delay=1000');
+        $response4 = $client->get('https://dummyjson.com/posts/');
 
         $endTime = microtime(true);
         $executionTime = ($endTime - $startTime);
+
 
         return new JsonResponse([
             'execution_time' => round($executionTime, 2) . ' segundos'
@@ -51,7 +49,7 @@ final class GroovyController extends AbstractController
             'api1' => $client->getAsync('https://dummyjson.com/posts/?delay=1000'),
             'api2' => $client->getAsync('https://dummyjson.com/posts/?delay=1000'),
             'api3' => $client->getAsync('https://dummyjson.com/posts/?delay=1000'),
-            'api4' => $client->getAsync('https://dummyjson.com/posts/?delay=1000'),
+            'api4' => $client->getAsync('https://dummyjson.com/posts/'),
         ];
 
         // Esperar a que todas las promises se resuelvan
